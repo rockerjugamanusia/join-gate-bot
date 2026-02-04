@@ -56,12 +56,12 @@ bot.action("CHECK", async (ctx) => {
     return ctx.answerCbQuery("Masih ada channel yang belum di-join ❌", { show_alert: true });
   }
   ctx.editMessageText("✅ Semua channel sudah di-join", Markup.inlineKeyboard([
-    [Markup.button.callback("🎁 Buka Menu", "OPEN")]
+    [Markup.button.callback("🤤 disini crotcrotnya 🤤", "OPEN")]
   ]));
 });
 
 bot.action("OPEN", async (ctx) => {
-  ctx.reply("🎉 Ini menu / link / fitur bot kamu");
+  ctx.reply("🤤https://t.me/sukacrotgsp🤤");
 });
 
 bot.launch();
