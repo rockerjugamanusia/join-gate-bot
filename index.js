@@ -61,7 +61,7 @@ bot.action("CHECK", async (ctx) => {
 });
 
 bot.action("OPEN", async (ctx) => {
-  ctx.reply("🤤t.me/sukacrotgsp🤤");
+  ctx.reply("🤤https://t.me/sukacrotgsp🤤");
 });
 
 bot.launch();
