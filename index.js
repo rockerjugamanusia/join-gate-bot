@@ -46,7 +46,7 @@ bot.start(async (ctx) => {
     );
   }
   ctx.reply("✅ Akses dibuka", Markup.inlineKeyboard([
-    [Markup.button.callback("🎁 Buka Menu", "OPEN")]
+    [Markup.button.callback("🤤💋disini crotcrotnya🤤💋", "OPEN")]
   ]));
 });
 
