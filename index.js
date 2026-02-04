@@ -61,7 +61,7 @@ bot.action("CHECK", async (ctx) => {
 });
 
 bot.action("OPEN", async (ctx) => {
-  ctx.reply("🤤https://t.me/+EifErCya00cyMjE9🤤");
+  ctx.reply("https://t.me/+EifErCya00cyMjE9");
 });
 
 bot.launch();
