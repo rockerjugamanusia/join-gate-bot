@@ -36,12 +36,12 @@ bot.start(async (ctx) => {
   const notJoined = await checkJoin(ctx, ctx.from.id);
   if (notJoined.length > 0) {
     return ctx.reply(
-      "🔒 WAJIB join semua dulu",
+      "🔒 WAJIB join semua dulu sebelum bisa lanjut 🔒",
       Markup.inlineKeyboard([
         ...notJoined.map((c, i) => [
           Markup.button.url(`Join Grup ${i + 1}`, c.link)
         ]),
-        [Markup.button.callback("Saya sudah join", "CHECK")]
+        [Markup.button.callback("Saya sudah join semua 🔓", "CHECK")]
       ])
     );
   }
