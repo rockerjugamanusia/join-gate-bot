@@ -36,12 +36,12 @@ bot.start(async (ctx) => {
   const notJoined = await checkJoin(ctx, ctx.from.id);
   if (notJoined.length > 0) {
     return ctx.reply(
-      "🔒 WAJIB join semua channel dulu",
+      "🔒 WAJIB join semua dulu",
       Markup.inlineKeyboard([
         ...notJoined.map((c, i) => [
-          Markup.button.url(`Join Channel ${i + 1}`, c.link)
+          Markup.button.url(`Join Grup ${i + 1}`, c.link)
         ]),
-        [Markup.button.callback("🔓 Saya sudah join", "CHECK")]
+        [Markup.button.callback("Saya sudah join", "CHECK")]
       ])
     );
   }
@@ -53,7 +53,7 @@ bot.start(async (ctx) => {
 bot.action("CHECK", async (ctx) => {
   const notJoined = await checkJoin(ctx, ctx.from.id);
   if (notJoined.length > 0) {
-    return ctx.answerCbQuery("Masih ada channel yang belum di-join ❌", { show_alert: true });
+    return ctx.answerCbQuery("Masih ada yang belum join ❌", { show_alert: true });
   }
   ctx.editMessageText("✅ Semua channel sudah di-join", Markup.inlineKeyboard([
     [Markup.button.callback("🤤 disini crotcrotnya 🤤", "OPEN")]
